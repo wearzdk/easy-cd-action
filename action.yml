@@ -1,0 +1,24 @@
+name: Easy CD
+description: Easy Project Deployment
+inputs:
+  id:
+    description: "Project ID"
+    required: true
+  token:
+    description: "Token"
+    required: true
+  server:
+    description: "Server url"
+    required: true
+  path:
+    description: "The directory ready to be deployed"
+    required: false
+    default: "dist"
+
+runs:
+  using: "node16"
+  main: "index.mjs"
+
+branding:
+  icon: "cloud"
+  color: "blue"

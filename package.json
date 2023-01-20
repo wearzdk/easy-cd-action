@@ -1,0 +1,31 @@
+{
+  "name": "easy-cd-action",
+  "version": "1.0.0",
+  "description": "easy-cd-action",
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "repository": "https://github.com/zskzskabcd/easy-cd-action.git",
+  "author": "programmer_lz <1225186748@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build --target default --no-source-maps --no-cache"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "targets": {
+    "default": {
+      "includeNodeModules": true
+    }
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "archiver": "^5.3.1",
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^5.3.1",
+    "parcel": "^2.8.3",
+    "typescript": "^4.9.4"
+  }
+}
